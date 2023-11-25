@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #000000;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* .....................navbar....................... */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: -70%;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* .............home.......................  */
+.home{
+    display: flex;
+    background: url("./images/img1.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+  width: 100%;
+  display: flex;
+}
+
+.home .max-width .row{
+  margin-right: 0;
+}
+
+.home .home-content .text-2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: -20%;
+    margin-top: 25%;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* ........... biography....................  */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; }
+
+#third-div {
+    background-color: #000;
+    line-height: 1.8;
+}
+
+#third-div-content {
+    color: #fff;
+    font-family: 'Lora', serif;
+}
+
+#third-div-title {
+    font-size: 4em;
+    margin-left: -8%;
+}
+  
+#third-div-text {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+#tribute-link1{
+    color: rgb(72, 106, 183);
+}
+
+  
+#author-text {
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+#author-text a{
+    color: #e52d10;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+/* ....................... movies ......................  */
+#title2{
+    color: #fff;
+    font-size: 3.5em;
+    font-weight: 500%;
+    font-family: 'Lora', serif;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+#movies {
+    justify-content: center;
+    align-items: center;
+    padding: 0 90px 40px 90px;
+}
+
+#movies-left, #movies-right {
+    padding: 20px;
+    margin: 18px 0;
+}
+
+.poster{
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 12px;
+    border: 4px dotted grey;
+    box-shadow: 5px 10px 14px rgba(81, 82, 82, 0.4);
+    width: 428px;
+}
+
+#movies, .poster{
+    display: flex;
+}
+
+.poster img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #cccccc;
+}
+
+.poster ul {
+    padding-left: 45px;
+    margin-top: 7%;
+}
+
+/* ................ awards ......................  */
+#title3{
+    color: #fff;
+    font-size: 4em;
+    font-weight: 500%;
+    font-family: 'Lora', serif;
+    margin-left: 43%;
+}
+
+#awards{
+    background-color: #000;
+    width: 100%;
+}
+
+#awards{
+    display: flex;
+    flex-direction: column;
+}
+
+#row{
+    display: flex;
+    flex-direction: row;
+}
+
+.award{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.award img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 1px solid #cccccc;
+}
+
+#row{
+    justify-content: space-around;
+    margin: 20px 60px;
+    padding-bottom: 40px;
+}
+
+.award {
+    width: 250px;
+    padding: 20px;
+    background-color: #94b8b8;
+    border-radius: 12px;
+    box-shadow: 5px 10px 14px rgba(81, 82, 82, 0.4);
+    margin: 38px 0;
+}
+
+.award p {
+    margin: 10px 0;
+}
+
+.award p:first-of-type {
+    margin-top: 30px;
+}
+
+/* ............. info ...................  */
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+#info {
+    padding: 12px 0;
+}
+
+.logo {
+    margin: 0 15px;
+}
+
+/* ....................footer ..........................................*/
+
+footer {
+    color: #ffffff;
+    font-size: 14px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #c9d619;
+}
+
+@media screen and (max-width: 500px) {
+
+    /* style navigation bar for small devices -----*/
+    .openbtn {
+        display: block;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: #d8d4d4;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        font-size: 60px;
+    }
+
+    .text{
+        top: .1%;
+        padding-right: 45%;
+    }
+
+    #title3{
+        font-size: 25px;
+    }
+
+    #img-caption{
+        font-size: 14px;
+    }
+
+    #tribute-info, #movies, #row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 0px;
+    }
+
+    #movies,
+    #movies-left, #movies-right{
+        width: 360px;
+    }
+
+    #movies-left, #movies-right{
+        margin: 0;
+        padding: 0;
+    }
+
+    .poster{
+        width: 330px;
+        padding: 10px;
+        margin: 25px 10px;
+
+    }
+
+    #row{
+        margin: 0;
+    }
+
+    .award{
+        width: 330px;
+        padding: 35px;
+        margin: 25px 10px;
+    }
+
+}
